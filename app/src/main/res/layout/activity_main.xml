@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/goldenrod"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="10dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/slateblue"
+                android:dropDownSelector="@color/slateblue"
+                android:layoutMode="clipBounds"
+                android:popupBackground="@color/silver" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:background="@drawable/editshape"
+                android:gravity="center"
+                android:hint="選擇日期" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/endDate"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:background="@drawable/editshape"
+                android:gravity="center"
+                android:hint="選擇日期" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL1"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/cardEx"
+            layout="@layout/card" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL3"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL2"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/cardDf"
+            layout="@layout/defcard"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

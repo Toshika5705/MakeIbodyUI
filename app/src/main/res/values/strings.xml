@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WebFetchData</string>
+
+    <string name="base_currency">AUD: 1.00</string>
+    <string name="nzd">NZD:</string>
+    <string name="usd">USD:</string>
+    <string name="gbp">GBP:</string>
+
+    <string name="createdtime">量測時間</string>
+    <string name="exercise">運動後脂肪率</string>
+    <string name="muscle">運動後肌肉率</string>
+    <string name="pfra">右臂分析:</string>
+    <string name="pfla">左臂分析:</string>
+    <string name="pft">軀幹分析:</string>
+    <string name="pfrl">右腿分析:</string>
+    <string name="pfll">左腿分析:</string>
+    <string name="pilra">右臂分析:</string>
+    <string name="pilla">左臂分析:</string>
+    <string name="pilt">軀幹分析:</string>
+    <string name="pilrl">右腿分析:</string>
+    <string name="pilll">左腿分析:</string>
+</resources>
+
